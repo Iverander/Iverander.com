@@ -1,0 +1,33 @@
+.gridcontainer
+{
+display: grid;
+
+grid-template-columns: auto auto auto;
+grid-template-areas: 
+"header header header";
+
+height: fit-content;
+
+gap: 3px;
+padding-left: 20vw;
+padding-right: 20vw;
+padding-bottom: 5vh;
+padding-top: 5vh;
+
+background-color: aquamarine;
+justify-content: center;
+
+border-radius: 20px;
+}
+
+.gridcontainer div{
+    background-color: aliceblue;
+}
+
+.gridcontainer div.header{
+    grid-area: header;
+    text-align: center;
+}
+.gridcontainer div.game{
+    grid-area: game;
+}

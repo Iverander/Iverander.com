@@ -1,33 +1,81 @@
+:root{
+    background-color: black;
+    color: aliceblue;
+}
 .gridcontainer
 {
-display: grid;
+    display: grid;
 
-grid-template-columns: auto auto auto;
-grid-template-areas: 
-"header header header";
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 
+    "header header header";
 
-height: fit-content;
+    height: fit-content;
 
-gap: 3px;
-padding-left: 20vw;
-padding-right: 20vw;
-padding-bottom: 5vh;
-padding-top: 5vh;
+    gap: 3px;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
 
-background-color: aquamarine;
-justify-content: center;
+    justify-content: center;
 
-border-radius: 20px;
+    border-radius: 20px;
 }
 
-.gridcontainer div{
+.gridcontainer #gridelement{
+    border-radius: 15px;
+    border-style: solid;
     background-color: aliceblue;
+    border-width: 2%;
+    border-color: aquamarine;
+
+    height: 15vh;
+    width: 25vw;
+
+    padding: 1%;
+
+    margin-right: 0.5vw;
+    margin-left: .5vw;
+    margin-top: .5vh;
+    margin-bottom: .5vh;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: .5s;
 }
+
+.gridcontainer #gridelement:hover{
+    transform: scale(1.02);
+    transition: .1s;
+}
+
 
 .gridcontainer div.header{
     grid-area: header;
     text-align: center;
+    height: 10vh;
 }
-.gridcontainer div.game{
-    grid-area: game;
+
+.game{
+    display: flex;
+    justify-content:left;
+    align-content: left;
+}
+.game h1{
+    text-align: left;
+    vertical-align: middle;
+    align-items: center;
+
+    text-decoration: none;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.game img{
+    object-fit:contain;
+    height: auto;
+    max-height: 100%;
+    width: auto;
+    max-width: 40%;
 }

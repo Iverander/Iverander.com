@@ -6,7 +6,7 @@
 {
     display: grid;
 
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 33% 33% 33%;
     grid-template-areas: 
     "header header header";
 
@@ -22,6 +22,14 @@
     border-radius: 20px;
 }
 
+@media all and (max-width: 600px){
+    .gridcontainer{
+            grid-template-columns: auto;
+            grid-template-areas: 
+            "header";
+    }
+}
+
 .gridcontainer #gridelement{
     border-radius: 15px;
     border-style: solid;
@@ -29,8 +37,7 @@
     border-width: 2%;
     border-color: aquamarine;
 
-    height: 15vh;
-    width: 25vw;
+    aspect-ratio: 2.5;
 
     padding: 1%;
 

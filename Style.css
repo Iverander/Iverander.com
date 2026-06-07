@@ -22,13 +22,22 @@
     border-radius: 20px;
 }
 
+@media all and (max-width: 1200px){
+    .gridcontainer{
+            grid-template-columns: 50% 50%;
+            grid-template-areas: 
+            "header header";
+    }
+}
+
 @media all and (max-width: 600px){
     .gridcontainer{
-            grid-template-columns: auto;
+            grid-template-columns: 100%;
             grid-template-areas: 
             "header";
     }
 }
+
 
 .gridcontainer #gridelement{
     border-radius: 15px;

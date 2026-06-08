@@ -26,10 +26,6 @@
     }
 }
 
-h1 {
-    font-size: 48px;
-}
-
 .gridcontainer #gridelement{
     border-radius: 15px;
     border-style: solid;
@@ -90,9 +86,18 @@ a:hover{
 }
 
 .listcontainer {
-    display: flex;
+    display: grid;
+
+    grid-template-columns: 20% 20% 20% 20% 20%;
+
+
     align-items: center;
     justify-content: center;
+}
+@media all and (max-width: 600px){
+    .listcontainer{
+            grid-template-columns: 33% 33% 33%;
+    }
 }
 
 .listcontainer div{
@@ -101,5 +106,6 @@ a:hover{
 }
 .listcontainer div img{
     max-height: 10vh;
+    max-width: 50%;
     object-fit: contain;
 }

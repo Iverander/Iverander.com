@@ -5,124 +5,29 @@
 }
 
 body{
-    padding-top: 5vh;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    margin: 0px;
 }
 
-a#button{
+.content{
+    margin-left: 6vw;
+    margin-right: 6vw;
+}
+.section{
+}
+
+a{
     transform: scale(1);
     transition: .5s;
+    color: inherit;
 }
-a#button:hover{
-    transform: scale(1.02);
+a:hover{
+    transform: scale(1.05);
     transition: .1s;
 }
 
-h1{
-    margin-top: 10vh;
+#title{
     border-style: solid;
     border-color: rgb(145, 145, 145);
     border-width: 0;
     border-bottom-width: 1px;
-}
-
-.gamecontainer
-{
-    display: grid;
-
-    grid-template-columns: 33% 33% 33%;
-
-    gap: 3px;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-@media all and (max-width: 1200px){
-    .gridcontainer{
-            grid-template-columns: 50% 50%;
-    }
-}
-
-@media all and (max-width: 600px){
-    .gridcontainer{
-            grid-template-columns: 100%;
-    }
-}
-
-.gamecontainer .game{
-    border-radius: 15px;
-    border-style: solid;
-    background-color: aliceblue;
-    border-width: 2%;
-    border-color: aquamarine;
-
-    aspect-ratio: 2.5;
-
-    padding: 1%;
-
-    margin-right: 0.5vw;
-    margin-left: .5vw;
-    margin-top: .5vh;
-    margin-bottom: .5vh;
-
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-.gamecontainer div.header{
-    grid-area: header;
-    text-align: center;
-    height: 10vh;
-}
-
-.gamecontainer .game{
-    display: flex;
-    justify-content:left;
-    align-content: left;
-}
-.gamecontainer .game img{
-    object-fit:contain;
-    height: auto;
-    max-height: 100%;
-    width: auto;
-    max-width: 40%;
-}
-.gamecontainer .game p{
-    text-align: left;
-    vertical-align: middle;
-    align-items: center;
-
-    font-size: 48px;
-
-    text-decoration: none;
-    color: white;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-}
-
-.listcontainer {
-    display: grid;
-
-    grid-template-columns: 20% 20% 20% 20% 20%;
-
-
-    align-items: center;
-    justify-content: center;
-}
-@media all and (max-width: 600px){
-    .listcontainer{
-            grid-template-columns: 33% 33% 33%;
-    }
-}
-
-.listcontainer div{
-    margin: 5%;
-    
-}
-.listcontainer div img{
-    max-height: 10vh;
-    max-width: 50%;
-    object-fit: contain;
 }

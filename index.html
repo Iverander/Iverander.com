@@ -5,83 +5,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iverander.com</title>
     <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="TopBar.css">
+    <link rel="stylesheet" href="GameDisplay.css">
+    <link rel="stylesheet" href="DisplayCase.css">
 </head>
 <body>
-    <h1>About Me!</h1>
 
-    <div class="listcontainer">
-        <div>
-            <p>A programmer of 5 years specializing in C#. In addition I also know HTML and CSS.</p>
-            <a><img src="/Art/Icons/CSharpIcon.png"></a>
-        </div>
-
-        <div>
-            <p>A game developer of 5 years, I am a expert with both Unity and Unreal while also specializing in Unity.</p>
-            <a><img src="/Art/Icons/UnityIcon.png"></a>
-        </div>
-
-        <div>
-            <p>
-                At Nord I studied Games and Entertainment Technology and co-developed games such as 
-                <a href="https://iverander.itch.io/code-is-broken">Code is Broken</a> and 
-                <a href="https://noisyentertainment.itch.io/springboy">Spring~Boy</a>.
-            </p>
-            <p>2023-2026 Bachelor</p>
-
-            <a id="button" href="https://www.nord.no/en/studies/games-and-entertainment-technology-bachelor"><img src="/Art/Icons/NordIcon.png"></a>
-        </div>
-
-        <div>
-            <p>
-                At Kristiania i studied Game Development and developed games such as
-                <a href="https://www.youtube.com/watch?v=hvpYJQsIoZA&t=20s">Elemental</a>.
-            </p>
-            <p>2021-2023 Fagbrev</p>
-            <a id="button" href="https://www.kristiania.no/studier/fagskole/spillutvikling---fullfinansiert/"><img src="/Art/Icons/KristianiaIcon.png"></a>
-        </div>
-
-        <div>
-            <p>A level designer of 5 years. I have designed gameplay for 3D, 2D, VR and MR games.</p>
-            <a><img src="/Art/Icons/LevelDesignIcon.png"></a>
-        </div>
-        
+    <div class="topbar">
+        <p>Torje Iverander Myhre Bergersen</p>
+        <p>torje@iverander.com</p>
     </div>
 
-    <h1>My Games!</h1>
+    <div class="content">
 
-    <div class="gamecontainer">
-
-        <a class="game" id="button" href="https://iverander.itch.io/code-is-broken" style="background-image: url('/Art/Games/CIB/CIB_BG.png'); background-position: bottom;">
-            <img src="/Art/Games/CIB/CIB_Logo.png">
-        </a>
-
-        <a class="game" id="button" href="https://noisyentertainment.itch.io/springboy" style="background-image: url('/Art/Games/SB/SB_BG.png'); background-position: center;">
-            <img src="/Art/Games/SB/SB_Logo.png">
-        </a>
-
-        <a class="game" id="button" href="https://youtu.be/hvpYJQsIoZA?t=20" style="background-image: url('/Art/Games/Elemental/Elemental_BG'); background-position: center;">
-            <p>Elemental</p>
-        </a>
-
-        <a class="game" id="button" href="https://iverander.itch.io/glyphofwarding" style="background-image: url('/Art/Games/GlyphOfWarding/GlyphOfWarding_BG.png'); background-position: center;">
-            <img src="/Art/Games/GlyphOfWarding/GlyphOfWarding_Logo.png">
-        </a>
-
-        <a class="game" id="button" href="https://playingwithwires.itch.io/polyglot-kitchen" style="background-image: url('/Art/Games/PolyglotKitchen/PolyglotKitchen_BG'); background-position: center;">
-            <img src="/Art/Games/PolyglotKitchen/PolyglotKitchen_Logo.png">
-        </a>
-
-        <a class="game" id="button" href="https://iverander.itch.io/speeddemon" style="background-image: url('/Art/Games/SpeedDemon/SpeedDemon_BG.png'); background-position: top;">
-            <img src="/Art/Games/SpeedDemon/SpeedDemon_Logo.png">
-        </a>
-
-    </div>
-
-    <h1>Social</h1>
+        <div class="section">
+            
+            <h1 id="title">About Me!</h1>
     
-    Github, LinkedIn, itch etc
+            <div class="displaycase">
 
-    <h1>Contact</h1>
-    torje@iverander.com
+                <div class="displayelement">
+                    <p>A programmer of 5 years specializing in C#. In addition I also know HTML and CSS.</p>
+    
+                    <div class="icon">
+                        <img src="/Art/Icons/CSharpIcon.png">
+                    </div>
+                </div>
+    
+                <div class="displayelement">
+                    <p>A game developer of 5 years, I am a expert with both Unity and Unreal while also specializing in Unity.</p>
+    
+                    <div class="icon">
+                        <img src="/Art/Icons/UnityIcon.png">
+                    </div>
+                </div>
+    
+                <div class="displayelement">
+                    <p>
+                        At Nord I studied Games and Entertainment Technology and co-developed games such as 
+                        <a href="https://iverander.itch.io/code-is-broken">Code is Broken</a> and 
+                        <a href="https://noisyentertainment.itch.io/springboy">Spring~Boy</a>.
+                    </p>
+
+                    <a class="icon" href="https://www.nord.no/en/studies/games-and-entertainment-technology-bachelor">
+                        <p>2023-2026 Bachelor</p>
+
+                        <img src="/Art/Icons/NordIcon.png">
+                    </a>
+                </div>
+    
+                <div class="displayelement">
+                    <p>
+                        At Kristiania i studied Game Development and developed games such as
+                        <a href="https://www.youtube.com/watch?v=hvpYJQsIoZA&t=20s">Elemental</a>.
+                    </p>
+    
+                    <a class="icon" href="https://www.kristiania.no/studier/fagskole/spillutvikling---fullfinansiert/">
+                        <p>2021-2023 Fagbrev</p> 
+                        <img src="/Art/Icons/KristianiaIcon.png">
+                    </a>
+                </div>
+    
+                <div class="displayelement">
+                    <p>A level designer of 5 years. I have designed gameplay for 3D, 2D, VR and MR games.</p>
+    
+                    <div class="icon">
+                        <img src="/Art/Icons/LevelDesignIcon.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <br>
+        <div class="section">
+            <h1 id="title">My Games!</h1>
+    
+            <div class="gamecontainer">
+    
+                <a class="game" id="button" href="https://iverander.itch.io/code-is-broken" style="background-image: url('/Art/Games/CIB/CIB_BG.png'); background-position: bottom;">
+                    <img src="/Art/Games/CIB/CIB_Logo.png">
+                </a>
+    
+                <a class="game" id="button" href="https://noisyentertainment.itch.io/springboy" style="background-image: url('/Art/Games/SB/SB_BG.png'); background-position: center;">
+                    <img src="/Art/Games/SB/SB_Logo.png">
+                </a>
+    
+                <a class="game" id="button" href="https://youtu.be/hvpYJQsIoZA?t=20" style="background-image: url('/Art/Games/Elemental/Elemental_BG'); background-position: center;">
+                    <p>Elemental</p>
+                </a>
+    
+                <a class="game" id="button" href="https://iverander.itch.io/glyphofwarding" style="background-image: url('/Art/Games/GlyphOfWarding/GlyphOfWarding_BG.png'); background-position: center;">
+                    <img src="/Art/Games/GlyphOfWarding/GlyphOfWarding_Logo.png">
+                </a>
+    
+                <a class="game" id="button" href="https://playingwithwires.itch.io/polyglot-kitchen" style="background-image: url('/Art/Games/PolyglotKitchen/PolyglotKitchen_BG'); background-position: center;">
+                    <img src="/Art/Games/PolyglotKitchen/PolyglotKitchen_Logo.png">
+                </a>
+    
+                <a class="game" id="button" href="https://iverander.itch.io/speeddemon" style="background-image: url('/Art/Games/SpeedDemon/SpeedDemon_BG.png'); background-position: top;">
+                    <img src="/Art/Games/SpeedDemon/SpeedDemon_Logo.png">
+                </a>
+    
+            </div>
+        </div>
+
+        <br>
+        <div class="section">
+            <h1 id="title">Social</h1>
+
+            <div class="displaycase">
+
+                <div class="displayelement">
+                    <a class="icon">
+                        <img src="/Art/Icons/LevelDesignIcon.png">
+                    </a>
+                </div>
+
+            </div>
+            
+            Github, LinkedIn, itch etc
+        </div>
+
+        <br>
+        <div class="section">
+            <h1 id="title">Contact</h1>
+            torje@iverander.com
+        </div>
+
+
+    </div>
 </body>
 </html>

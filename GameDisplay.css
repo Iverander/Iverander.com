@@ -1,0 +1,61 @@
+.gamecontainer
+{
+    display: grid;
+
+    grid-template-columns: 33% 33% 33%;
+
+    gap: 10px;
+}
+
+@media all and (max-width: 1200px){
+    .gamecontainer{
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media all and (max-width: 600px){
+    .gamecontainer{
+        grid-template-columns: 100%;
+    }
+}
+
+.game{
+    display: flex;
+    justify-content:left;
+    align-content: left;
+
+    border: 3px solid aquamarine;
+    border-radius: 15px;
+    background-color: aliceblue;
+
+    aspect-ratio: 2.5;
+
+    padding: 10px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content:left;
+    align-content: left;
+}
+
+.game img{
+    object-fit:contain;
+    height: auto;
+    max-height: 100%;
+    width: auto;
+    max-width: 40%;
+}
+.game p{
+    text-align: left;
+    vertical-align: middle;
+    align-items: center;
+
+    font-size: 48px;
+
+    text-decoration: none;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}

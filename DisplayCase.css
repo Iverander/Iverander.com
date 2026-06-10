@@ -1,0 +1,61 @@
+.displaycase {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    gap: 10px;
+}
+
+.displayelement{
+    padding: 10px;
+
+    border-radius: 15px;
+    background-color: rgb(22, 11, 55);
+
+    aspect-ratio: 1.5;
+
+    display: grid;
+    grid-auto-rows: 65% 35%;
+
+    text-decoration: none;
+    color: white;
+    text-align: justify;
+}
+
+.displayelement p{
+    margin: 0;
+}
+
+.displayelement .icon{
+    text-align:center;
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+.displayelement .icon img{
+    object-fit: contain;
+
+    width: 100%;
+    height: 100%;
+}
+
+@media all and (max-width: 1200px){
+    .displaycase{
+        grid-template-columns: 50% 50%;
+    }
+
+    .displayelement{
+        aspect-ratio: 2;
+    }
+}
+
+@media all and (max-width: 600px){
+    .displayelement{
+        aspect-ratio: .7;
+    }
+}

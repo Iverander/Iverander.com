@@ -1,14 +1,17 @@
 .displaycase {
     display: grid;
+
+
     grid-template-columns: 20% 20% 20% 20% 20%;
-    gap: 10px;
+    justify-content: center;
 }
 
 .displayelement{
     padding: 10px;
+    margin: 5px;
 
     border-radius: 15px;
-    background-color: rgb(22, 11, 55);
+    /*background-color: rgb(22, 11, 55);*/
 
     aspect-ratio: 1.5;
 
@@ -17,11 +20,11 @@
 
     text-decoration: none;
     color: white;
-    text-align: justify;
 }
 
 .displayelement p{
     margin: 0;
+    font-size: large;
 }
 
 .displayelement .icon{
@@ -52,10 +55,18 @@
     .displayelement{
         aspect-ratio: 2;
     }
+
+    .displayelement p{
+    font-size: medium;
+    }
 }
 
 @media all and (max-width: 600px){
     .displayelement{
         aspect-ratio: .7;
+    }
+
+    .displayelement p{
+        font-size: small;
     }
 }

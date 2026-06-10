@@ -31,3 +31,7 @@ a:hover{
     border-width: 0;
     border-bottom-width: 1px;
 }
+
+p#square{
+    text-align: justify;
+}
